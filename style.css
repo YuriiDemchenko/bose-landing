@@ -34,6 +34,22 @@ body {
     background-size: cover;
 }
 
+@media (max-width: 1024px) {
+    .header {
+        padding: 64px 72px;
+        background-image: url(images/header-bg-small.png);
+    }
+
+}
+
+@media (max-width: 576) {
+    .header {
+        padding: 32px 20px;
+        background-position: 0 0;
+    }
+
+}
+
 .header__top {
     display: flex;
     justify-content: space-between;
@@ -50,6 +66,20 @@ body {
     font-style: italic;
 }
 
+@media (max-width: 1024px) {
+    .header__title {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 576) {
+    .header__title {
+        font-size: 32px;
+    }
+
+}
+
 /* #endregion */
 /* #region menu */
 .menu {
@@ -64,6 +94,20 @@ body {
     height: 100vh;
     background: #e5e5e5;
     /* display: none; */
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        padding: 64px 72px;
+    }
+
+}
+
+@media (max-width: 576) {
+    .menu {
+        padding: 32px 20px;
+    }
+
 }
 
 .menu:target {
@@ -118,6 +162,21 @@ body {
     justify-content: center;
     display: flex;
     gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .recommended__products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .recommended__products {
+        align-items: stretch;
+    }
+
 }
 
 .product {
@@ -181,13 +240,35 @@ body {
     width: 32%;
 }
 
+@media (max-width: 576px) {
+    .photo-square {
+        width: 48.5%;
+        object-fit: cover;
+    }
+
+    .photo-wide {
+        width: 48.5%;
+        object-fit: cover;
+    }
+
+}
+
 .photo-wide {
     width: 65%;
 }
 
 .how-to-buy {
+    max-width: 1020px;
+    margin: 0 auto;
     display: flex;
     gap: 24px;
+}
+
+@media (max-width: 576px) {
+    .how-to-buy {
+        display: block;
+    }
+
 }
 
 .how-to-buy__title {
@@ -221,6 +302,20 @@ body {
     background-color: white;
 }
 
+@media (max-width: 1024px) {
+    .main {
+        padding: 120px 72px;
+    }
+
+}
+
+@media (max-width: 576) {
+    .main {
+        padding: 120px 20px;
+    }
+
+}
+
 .footer {
     position: sticky;
     bottom: 0;
@@ -230,4 +325,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.logo {
+    height: 24px;
+}
+
+@media (max-width: 576px) {
+    .logo {
+        height: 16px;
+    }
+
 }
